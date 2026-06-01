@@ -1,0 +1,84 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #0f0f0f;
+  border-bottom: 1px solid #222;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+.nav-logo span { color: #6c63ff; }
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0; padding: 0;
+}
+
+/* ── NAV LINK BUTTONS ── */
+.nav-links a {
+  position: relative;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: color 0.2s;
+}
+
+/* animated underline */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #6c63ff, #a78bfa);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+  box-shadow: 0 0 8px #6c63ffaa;
+}
+
+/* shine sweep layer */
+.nav-links a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255,255,255,0.12) 50%,
+    transparent 100%
+  );
+  transform: skewX(-20deg);
+}
+
+.nav-links a:hover::before {
+  animation: shine-sweep 0.5s ease forwards;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+.nav-links a:hover::after {
+  width: 80%;
+}
+
+@keyframes shine-sweep {
+  0%   { left: -75%; }
+  100% { left: 125%; }
+}
