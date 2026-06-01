@@ -86,7 +86,7 @@ function Contact() {
               <div className="info-icon"></div>
               <div>
                 <p className="info-label">Location</p>
-                <p className="info-value">No : 21/2, Ihalawela, Kengalla, Kundasale,Kandy, Sri Lanka 🇱🇰</p>
+                <p className="info-value">No : 21/2, Ihalawela, Kengalla, Kundasale,Kandy, Sri Lanka </p>
               </div>
             </div>
           </div>
