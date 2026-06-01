@@ -45,7 +45,7 @@ function About() {
         <ScrollReveal delay={0}>
           <div className="about-hero">
             <div className="about-hero-left">
-              <div className="badge">About Me</div>
+              <div className="badge">👩‍💻 About Me</div>
               <h1 className="about-title">
                 Passionate about <span className="accent">Technology</span> & <span className="accent">Design</span>
               </h1>

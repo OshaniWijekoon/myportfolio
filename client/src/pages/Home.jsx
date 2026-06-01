@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 
-const roles = ['UI/UX Designer', 'Business Analysis', 'Web Development'];
+const roles = ['UI/UX Designer', 'Business Analysis', 'Web Developmen'];
 
 function Home() {
   const [roleIndex, setRoleIndex] = useState(0);
